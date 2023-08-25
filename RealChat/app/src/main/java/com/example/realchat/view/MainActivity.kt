@@ -49,12 +49,14 @@ class MainActivity : AppCompatActivity() {
 
         setUserName()
     }
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu, menu)
         return super.onCreateOptionsMenu(menu)
     }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if(item.itemId == R.id.log_out) {
+        if (item.itemId == R.id.log_out) {
             mAuth.signOut()
             val intent = Intent(this@MainActivity, LoginActivity::class.java)
             startActivity(intent)
@@ -67,10 +69,10 @@ class MainActivity : AppCompatActivity() {
     private fun setUserName() {
         mDbRef.child("user").addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                for(postSnapshot in snapshot.children) {
+                for (postSnapshot in snapshot.children) {
                     val currentUser = postSnapshot.getValue(User::class.java)
 
-                    if(mAuth.currentUser?.uid != currentUser?.uid) {
+                    if (mAuth.currentUser?.uid != currentUser?.uid) {
                         userList.add(currentUser!!)
                     }
                 }
