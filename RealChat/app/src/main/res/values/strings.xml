@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">RealChat</string>
+    <string name="activity_login_title">Real Chat</string>
+    <string name="activity_login_linear_title">LOGIN</string>
+    <string name="activity_login_edittext_email">Email</string>
+    <string name="activity_login_edittext_password">Password</string>
+    <string name="activity_login_edittext_login">LOGIN</string>
+    <string name="activity_login_text_signup">Don\'t have an account? Sign Up</string>
+    <string name="activity_signup_linear_title">SIGN UP</string>
+    <string name="activity_signup_edit_name">Name</string>
+    <string name="activity_signup_btn_signup">SIGN UP</string>
+    <string name="activity_chat_edittext">메시지를 입력하세요</string>
 </resources>

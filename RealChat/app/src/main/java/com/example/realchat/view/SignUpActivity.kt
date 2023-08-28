@@ -17,11 +17,13 @@ class SignUpActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.signUpBtn.setOnClickListener {
+
             val name = binding.nameEdit.text.toString().trim()
             val email = binding.emailEdit.text.toString().trim()
             val password = binding.passwordEdit.text.toString().trim()
 
             LoginModule.signUp(name, email, password, this)
+
         }
     }
 

@@ -28,8 +28,10 @@
             android:layout_height="50dp"
             android:layout_marginStart="10dp"
             android:layout_weight="85"
+            android:maxLines="1"
             android:background="@drawable/edit_background"
-            android:hint="메시지를 입력하세요"
+            android:hint="@string/activity_chat_edittext"
+            android:textColorHint="@color/realchat_primary_color"
             android:paddingStart="10dp" />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -39,7 +41,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_weight="15"
-            android:background="@drawable/btn_bacground"
+            android:background="@drawable/activity_login_btn_login"
             android:text="전송"
             android:textColor="@android:color/white" />
     </LinearLayout>

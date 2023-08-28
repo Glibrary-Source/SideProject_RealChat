@@ -5,12 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".view.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/activity_login_frame_title_background">
+
+        <TextView
+            android:id="@+id/text_app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/activity_login_title"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/user_recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
         tools:listitem="@layout/user_layout"/>
 
 </LinearLayout>
