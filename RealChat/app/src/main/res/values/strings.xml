@@ -10,4 +10,5 @@
     <string name="activity_signup_edit_name">Name</string>
     <string name="activity_signup_btn_signup">SIGN UP</string>
     <string name="activity_chat_edittext">메시지를 입력하세요</string>
+    <string name="activity_splash_title">Real Chat</string>
 </resources>
